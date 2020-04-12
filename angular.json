@@ -113,9 +113,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "assets/bootstrap-4.4.1/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "assets/jquery-3.5.0/jquery-3.5.0.slim.min.js",
+              "assets/tether-1.4.3/tether.min.js",
+              "assets/bootstrap-4.4.1/js/bootstrap.min.js"
+            ]
           }
         },
         "lint": {
