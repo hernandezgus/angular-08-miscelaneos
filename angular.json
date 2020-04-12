@@ -114,7 +114,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "assets/bootstrap-4.4.1/css/bootstrap.min.css"
+              "assets/bootstrap-4.4.1/css/bootstrap.min.css",
+              "assets/font-awesome-4.7.0/css/font-awesome.min.css"
             ],
             "scripts": [
               "assets/jquery-3.5.0/jquery-3.5.0.slim.min.js",
