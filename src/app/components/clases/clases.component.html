@@ -6,3 +6,13 @@
 <button class="btn btn-success" (click)="alerta = 'alert-success'">Success</button>
 
 <h3 [ngClass]="{ 'text-danger': propiedades.colorDanger, 'text-info': !propiedades.colorDanger }">Hola mundo</h3>
+
+<button (click)="propiedades.colorDanger = !propiedades.colorDanger" type="button" class="btn" [ngClass]="{ 'btn-danger': propiedades.colorDanger, 'btn-info': !propiedades.colorDanger }">Cambiar</button>
+
+<h3>Proceso async</h3>
+<button (click)="ejecutar()" type="button" name="button" class="btn btn-primary" [disabled]='cargando'>
+    <i class="fa" [ngClass]="{ 'fa-save': !cargando, 'fa-refresh fa-spin': cargando }"></i>
+    <span *ngIf="cargando">Espere por favor</span>
+    <span *ngIf="!cargando">Guardar</span>
+    <span></span>
+</button>

@@ -8,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class ClasesComponent implements OnInit {
 
   alerta = 'alert-danger';
-  propiedades: object = {
+  propiedades: any = {
     colorDanger: false
   };
+
+  cargando = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  ejecutar() {
+    this.cargando = true;
+    setTimeout( () => this.cargando = false, 3000);
+  }
 }
