@@ -1,0 +1,8 @@
+<div [ngClass]="alerta" class="alert" role="alert">
+    This is a primary alert—check it out!
+</div>
+
+<button class="btn btn-info" (click)="alerta = 'alert-info'">Info</button>
+<button class="btn btn-success" (click)="alerta = 'alert-success'">Success</button>
+
+<h3 [ngClass]="{ 'text-danger': propiedades.colorDanger, 'text-info': !propiedades.colorDanger }">Hola mundo</h3>
